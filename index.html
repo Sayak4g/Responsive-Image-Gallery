@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="https://png.pngtree.com/png-vector/20190521/ourmid/pngtree-gallery-logo-icon-design-template-vector-png-image_1048779.jpg" alt="Logo" class="logo">
+    </header>
+    <main>
+        <h1 class="gallery-title">Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1478104718532-efe04cc3ff7f?q=80&w=876&auto=format&fit=crop" alt="Italian Trulli">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://plus.unsplash.com/premium_photo-1661331911412-330f2e99cf53?w=900&auto=format&fit=crop&q=60" alt="Image 2">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1513680592398-887abb03c760?w=400&auto=format&fit=crop&q=60" alt="Image 3">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=400&auto=format&fit=crop&q=60" alt="Image 4">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1471417834049-cbf30bf7a2a4?w=400&auto=format&fit=crop&q=60" alt="Image 5">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1620313925071-c14400e4f548?w=400&auto=format&fit=crop&q=60" alt="Image 6">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=400&auto=format&fit=crop&q=60" alt="Image 7">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1503676593575-d732ab11be71?w=400&auto=format&fit=crop&q=60" alt="Image 8">
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Image View -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
